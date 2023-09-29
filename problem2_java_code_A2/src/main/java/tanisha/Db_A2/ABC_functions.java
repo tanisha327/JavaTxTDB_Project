@@ -53,7 +53,7 @@ public class ABC_functions {
 	
 public void get_news(){
     	
-        NewsApiClient newsApiClient = new NewsApiClient("e1156327a7f145c69a06a9dba0d3ab7e");
+        NewsApiClient newsApiClient = new NewsApiClient("API key");
         
         newsApiClient.getEverything(
         		  new EverythingRequest.Builder()
@@ -125,7 +125,7 @@ Inserts a record to MongoDB using the specified collection name and data parts.
 */
 
 public void inserRecordToMongoDB(String collectionName, String[] parts) {
-	String connectionString = "mongodb+srv://tanisha327:tanisha327@lab6.hxoakca.mongodb.net/test?retryWrites=true&w=majority";
+	String connectionString = "mongodb+srv://CREDENTIALS.hxoakca.mongodb.net/test?retryWrites=true&w=majority";
     ConnectionString connString = new ConnectionString(connectionString);
     MongoClientSettings settings = MongoClientSettings.builder()
         .applyConnectionString(connString)
